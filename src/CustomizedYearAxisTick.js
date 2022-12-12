@@ -8,10 +8,19 @@ class CustomizedYearAxisTick extends PureComponent {
 
     return (
       <g transform={`translate(${x},${y})`}>
-        <text x={0} y={0} dy={16} textAnchor='middle' fill='#666'>
-          {payload.value.replace('.', '')}
-        </text>
-        {payload.value.indexOf('.') > 0 && (
+        {payload.value.indexOf('#') > -1 && (
+          <text
+            x={0}
+            y={0}
+            dy={16}
+            textAnchor='middle'
+            fill='#666'
+            fillOpacity={0.7}
+          >
+            {payload.value.replace('.', '').replace('#', '')}
+          </text>
+        )}
+        {payload.value.indexOf('.') > -1 && (
           <circle cx='25' cy='0' r='3' fill='red' />
         )}
       </g>

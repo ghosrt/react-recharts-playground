@@ -8,11 +8,18 @@ class CustomizedMonthAxisTick extends PureComponent {
 
     return (
       <g transform={`translate(${x},${y})`}>
-        <text x={0} y={0} dy={16} textAnchor='middle' fill='#666'>
-          {payload.value.replace('_', '')}
+        <text
+          x={0}
+          y={0}
+          dy={16}
+          textAnchor='middle'
+          fill='#666'
+          fontWeight={'bold'}
+        >
+          {payload.value.replace('_', '').replace('.', '')}
           {appender}
         </text>
-        {payload.value.indexOf('_') > 0 && (
+        {payload.value.indexOf('_') > -1 && (
           <line
             x1='-15'
             y1='24'
@@ -22,6 +29,9 @@ class CustomizedMonthAxisTick extends PureComponent {
             strokeWidth='3'
             strokeLinecap='round'
           ></line>
+        )}
+        {payload.value.indexOf('.') > -1 && (
+          <circle cx='25' cy='0' r='3' fill='red' />
         )}
       </g>
     );
