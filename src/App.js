@@ -10,6 +10,7 @@ import {
 } from 'recharts';
 import CustomizedYearAxisTick from './CustomizedYearAxisTick';
 import CustomizedMonthAxisTick from './CustomizedMonthAxisTick';
+import CustomTooltip from './CustomTooltip';
 
 const data = [
   {
@@ -128,9 +129,20 @@ function App() {
             tick={<CustomizedMonthAxisTick appender=' 月' />}
           />
           <YAxis />
-          <Tooltip cursor={{ fillOpacity: '0.4' }} />
-          <Bar dataKey='acqValue' fill='#8884d8' name='取得額' />
-          <Bar dataKey='estValue' fill='#ffc658' name='評価額' />
+          <Tooltip
+            cursor={{ fillOpacity: '0.4' }}
+            content={<CustomTooltip />}
+          />
+          <Bar
+            dataKey='acqValue'
+            fill='rgba(255, 99, 132, 0.5)'
+            name='取得額'
+          />
+          <Bar
+            dataKey='estValue'
+            fill='rgba(53, 162, 235, 0.5)'
+            name='評価額'
+          />
         </BarChart>
       </div>
     </div>
