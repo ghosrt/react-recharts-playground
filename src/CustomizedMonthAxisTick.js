@@ -19,8 +19,8 @@ class CustomizedMonthAxisTick extends PureComponent {
             x2='15'
             y2='24'
             stroke='orange'
-            stroke-width='3'
-            stroke-linecap='round'
+            strokeWidth='3'
+            strokeLinecap='round'
           ></line>
         )}
       </g>

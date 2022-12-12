@@ -51,8 +51,8 @@ const data = [
   {
     month: '5',
     year: '2021',
-    acqValue: 2390,
-    pv: 3800,
+    estValue: 2390,
+    acqValue: 3800,
     amt: 2500,
   },
   {
@@ -79,8 +79,8 @@ const data = [
   {
     month: '9',
     year: '2021',
-    acqValue: 2390,
-    pv: 3800,
+    estValue: 2390,
+    acqValue: 3800,
     amt: 2500,
   },
   {
