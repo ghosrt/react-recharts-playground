@@ -15,6 +15,7 @@ import CustomTooltip from './CustomTooltip';
 
 const data = [
   {
+    id: '202112',
     month: '12',
     year: '2021',
     estValue: 4000,
@@ -22,6 +23,7 @@ const data = [
     amt: 2400,
   },
   {
+    id: '202201',
     month: '1',
     year: '#2022.',
     estValue: 3000,
@@ -29,6 +31,7 @@ const data = [
     amt: 2210,
   },
   {
+    id: '202202',
     month: '2_',
     year: '2022',
     estValue: 2000,
@@ -36,6 +39,7 @@ const data = [
     amt: 2290,
   },
   {
+    id: '202203',
     month: '3_',
     year: '2022',
     estValue: 2780,
@@ -43,6 +47,7 @@ const data = [
     amt: 2000,
   },
   {
+    id: '202204',
     month: '4',
     year: '2022',
     estValue: 1890,
@@ -50,6 +55,7 @@ const data = [
     amt: 2181,
   },
   {
+    id: '202205',
     month: '5',
     year: '2022',
     estValue: 2390,
@@ -57,6 +63,7 @@ const data = [
     amt: 2500,
   },
   {
+    id: '202206',
     month: '6',
     year: '2022',
     estValue: 3490,
@@ -64,6 +71,7 @@ const data = [
     amt: 2100,
   },
   {
+    id: '202207',
     month: '7_',
     year: '2022',
     estValue: 2780,
@@ -71,6 +79,7 @@ const data = [
     amt: 2000,
   },
   {
+    id: '202208',
     month: '8_.',
     year: '2022',
     estValue: 1890,
@@ -78,6 +87,7 @@ const data = [
     amt: 2181,
   },
   {
+    id: '202209',
     month: '9',
     year: '2022',
     estValue: 2390,
@@ -85,6 +95,7 @@ const data = [
     amt: 2500,
   },
   {
+    id: '202210',
     month: '10',
     year: '2022',
     estValue: 3490,
@@ -115,15 +126,16 @@ function App() {
             strokeDasharray='3 0 0'
             vertical={false}
           />
+          <XAxis dataKey='id' xAxisId={0} hide='true' />
           <XAxis
             dataKey='year'
-            xAxisId={0}
+            xAxisId={1}
             interval='preserveStart'
             tick={<CustomizedYearAxisTick />}
           />
           <XAxis
             dataKey='month'
-            xAxisId={1}
+            xAxisId={2}
             axisLine={false}
             tickLine={false}
             height={64}
