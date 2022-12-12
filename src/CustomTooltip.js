@@ -1,6 +1,4 @@
-const formatter = (label) => {
-  return label.replace('#', '').replace('.', '').replace('_', '');
-};
+import React from 'react';
 
 const idFormatter = (label) => {
   return (
