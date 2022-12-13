@@ -12,7 +12,6 @@ import {
 
 import CustomizedYearAxisTick from './CustomizedYearAxisTick';
 import CustomizedMonthAxisTick from './CustomizedMonthAxisTick';
-import CustomLegends from './CustomLegends';
 import CustomTooltip from './CustomTooltip';
 
 class ShareProfitChart extends PureComponent {
