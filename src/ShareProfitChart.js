@@ -31,40 +31,29 @@ class ShareProfitChart extends PureComponent {
       page: 1,
       maxPage: this.props.data.length / 12,
     });
-    console.log(this.props.data);
   }
 
   handleClick(direction) {
     if (direction === 'prev') {
-      this.setState(
-        {
-          page: this.state.page - 1,
-          renderedData: this.getTargetPageData(
-            this.state.page,
-            this.state.page - 1,
-            12,
-            this.props.data
-          ),
-        },
-        () => {
-          console.log(this.state.renderedData);
-        }
-      );
+      this.setState({
+        page: this.state.page - 1,
+        renderedData: this.getTargetPageData(
+          this.state.page,
+          this.state.page - 1,
+          12,
+          this.props.data
+        ),
+      });
     } else {
-      this.setState(
-        {
-          page: this.state.page + 1,
-          renderedData: this.getTargetPageData(
-            this.state.page,
-            this.state.page + 1,
-            12,
-            this.props.data
-          ),
-        },
-        () => {
-          console.log(this.state.renderedData);
-        }
-      );
+      this.setState({
+        page: this.state.page + 1,
+        renderedData: this.getTargetPageData(
+          this.state.page,
+          this.state.page + 1,
+          12,
+          this.props.data
+        ),
+      });
     }
   }
 
@@ -83,7 +72,6 @@ class ShareProfitChart extends PureComponent {
     // get new target start/end data indexes.
     const targetStartIndex = (newPage - 1) * pageSize;
     const targetEndIndex = newPage * pageSize;
-    console.log(targetStartIndex, targetEndIndex);
 
     return totalData.slice(targetStartIndex, targetEndIndex);
   }
@@ -153,6 +141,7 @@ class ShareProfitChart extends PureComponent {
                 <Tooltip
                   border={null}
                   cursor={{ fillOpacity: '0.4' }}
+                  className='rounded-lg'
                   content={<CustomTooltip />}
                 />
                 <Bar dataKey='acqValue' fill={acqColor} name={acqDataName} />
