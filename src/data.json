@@ -1,0 +1,218 @@
+[
+  {
+    "id": "202012",
+    "month": "12",
+    "year": "2021",
+    "estValue": 4000,
+    "estDiff": 4000,
+    "acqValue": 2400,
+    "heldShares": 2400
+  },
+  {
+    "id": "202101",
+    "month": "1_",
+    "year": "#2021.",
+    "estValue": 3000,
+    "estDiff": 3000,
+    "acqValue": 1398,
+    "heldShares": 2210
+  },
+  {
+    "id": "202102",
+    "month": "2",
+    "year": "2021",
+    "estValue": 2000,
+    "estDiff": 2000,
+    "acqValue": 9800,
+    "heldShares": 2290
+  },
+  {
+    "id": "202103",
+    "month": "3",
+    "year": "2021",
+    "estValue": 2780,
+    "estDiff": 2780,
+    "acqValue": 3908,
+    "heldShares": 2000
+  },
+  {
+    "id": "202104",
+    "month": "4_",
+    "year": "2021",
+    "estValue": 1890,
+    "estDiff": 1890,
+    "acqValue": 4800,
+    "heldShares": 2181
+  },
+  {
+    "id": "202105",
+    "month": "5_",
+    "year": "2021",
+    "estValue": 2390,
+    "estDiff": 2390,
+    "acqValue": 3800,
+    "heldShares": 2500
+  },
+  {
+    "id": "202106",
+    "month": "6",
+    "year": "2021",
+    "estValue": 3490,
+    "estDiff": 3490,
+    "acqValue": 4300,
+    "heldShares": 2100
+  },
+  {
+    "id": "202107",
+    "month": "7",
+    "year": "2021",
+    "estValue": 2780,
+    "estDiff": 2780,
+    "acqValue": 3908,
+    "heldShares": 2000
+  },
+  {
+    "id": "202108",
+    "month": "8",
+    "year": "2021",
+    "estValue": 1890,
+    "estDiff": 1890,
+    "acqValue": 4800,
+    "heldShares": 2181
+  },
+  {
+    "id": "202109",
+    "month": "9_",
+    "year": "2021",
+    "estValue": 2390,
+    "estDiff": 2390,
+    "acqValue": 3800,
+    "heldShares": 2500
+  },
+  {
+    "id": "202110",
+    "month": "10",
+    "year": "2021",
+    "estValue": 3490,
+    "estDiff": 3490,
+    "acqValue": 4300,
+    "heldShares": 2100
+  },
+  {
+    "id": "202111",
+    "month": "11",
+    "year": "2021",
+    "estValue": 1500,
+    "estDiff": 7860,
+    "acqValue": 4800,
+    "heldShares": 2100
+  },
+  {
+    "id": "202112",
+    "month": "12.",
+    "year": "2021",
+    "estValue": 2165,
+    "estDiff": 4000,
+    "acqValue": 5154,
+    "heldShares": 2400
+  },
+  {
+    "id": "202201",
+    "month": "1",
+    "year": "#2022",
+    "estValue": 1550,
+    "estDiff": 3000,
+    "acqValue": 5198,
+    "heldShares": 2210
+  },
+  {
+    "id": "202202",
+    "month": "2_",
+    "year": "2022",
+    "estValue": 5198,
+    "estDiff": 2000,
+    "acqValue": 5574,
+    "heldShares": 2290
+  },
+  {
+    "id": "202203",
+    "month": "3_",
+    "year": "2022",
+    "estValue": 2035,
+    "estDiff": 2780,
+    "acqValue": 1748,
+    "heldShares": 2000
+  },
+  {
+    "id": "202204",
+    "month": "4",
+    "year": "2022",
+    "estValue": 9919,
+    "estDiff": 1890,
+    "acqValue": 5510,
+    "heldShares": 2181
+  },
+  {
+    "id": "202205",
+    "month": "5",
+    "year": "2022",
+    "estValue": 2168,
+    "estDiff": 2390,
+    "acqValue": 3564,
+    "heldShares": 2500
+  },
+  {
+    "id": "202206",
+    "month": "6",
+    "year": "2022",
+    "estValue": 3490,
+    "estDiff": 3490,
+    "acqValue": 4300,
+    "heldShares": 2100
+  },
+  {
+    "id": "202207",
+    "month": "7_",
+    "year": "2022",
+    "estValue": 5149,
+    "estDiff": 2780,
+    "acqValue": 7898,
+    "heldShares": 2000
+  },
+  {
+    "id": "202208",
+    "month": "8_.",
+    "year": "2022",
+    "estValue": 1589,
+    "estDiff": 1890,
+    "acqValue": 8798,
+    "heldShares": 2181
+  },
+  {
+    "id": "202209",
+    "month": "9",
+    "year": "2022",
+    "estValue": 7108,
+    "estDiff": 2390,
+    "acqValue": 7506,
+    "heldShares": 2500
+  },
+  {
+    "id": "202210",
+    "month": "10",
+    "year": "2022",
+    "estValue": 4563,
+    "estDiff": 3490,
+    "acqValue": 5464,
+    "heldShares": 2100
+  },
+  {
+    "id": "202211",
+    "month": "11",
+    "year": "2022",
+    "estValue": 8967,
+    "estDiff": 7860,
+    "acqValue": 7863,
+    "heldShares": 2100
+  }
+]
