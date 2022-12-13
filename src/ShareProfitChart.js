@@ -13,6 +13,8 @@ import {
 import CustomizedYearAxisTick from './CustomizedYearAxisTick';
 import CustomizedMonthAxisTick from './CustomizedMonthAxisTick';
 import CustomTooltip from './CustomTooltip';
+import CustomLegends from './CustomLegends';
+import CustomTooltipCursor from './CustomTooltipCursor';
 
 class ShareProfitChart extends PureComponent {
   constructor(props) {
@@ -87,7 +89,7 @@ class ShareProfitChart extends PureComponent {
         <h1 className='text-left'>{chartTitle}</h1>
         <br />
         <div className='w-full flex flex-row'>
-          <div className='w-1/5 h-3/4'>
+          <div className='w-1/5 h-3/4 my-auto'>
             <button
               className='black-text text-2xl text-center'
               onClick={() => {
@@ -101,7 +103,7 @@ class ShareProfitChart extends PureComponent {
             className='barChart'
             style={{ width: '100%', minHeight: '1000px' }}
           >
-            <ResponsiveContainer height='70%'>
+            <ResponsiveContainer height='100%'>
               <BarChart
                 width={1024}
                 height={768}
@@ -114,7 +116,7 @@ class ShareProfitChart extends PureComponent {
                   align='left'
                   verticalAlign='top'
                   wrapperStyle={{ paddingTop: '10px', paddingBottom: '20px' }}
-                  // content={<CustomLegends />}
+                  content={<CustomLegends />}
                 />
                 <CartesianGrid
                   strokeWidth={1}
@@ -139,7 +141,7 @@ class ShareProfitChart extends PureComponent {
                 <YAxis />
                 <Tooltip
                   border={null}
-                  cursor={{ fillOpacity: '0.4' }}
+                  cursor={<CustomTooltipCursor />}
                   className='rounded-lg'
                   content={<CustomTooltip />}
                 />
@@ -148,8 +150,7 @@ class ShareProfitChart extends PureComponent {
               </BarChart>
             </ResponsiveContainer>
           </div>
-          <div className='w-1/5 h-3/4'>
-            {' '}
+          <div className='w-1/5 h-3/4 my-auto'>
             <button
               className='black-text text-2xl text-center'
               onClick={() => {
