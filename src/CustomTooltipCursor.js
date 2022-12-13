@@ -3,7 +3,6 @@ import { Rectangle } from 'recharts';
 
 const CustomTooltipCursor = (props) => {
   const { x, y, width, height, top } = props;
-  console.log(props);
   return (
     <Fragment>
       <Rectangle
