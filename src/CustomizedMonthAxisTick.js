@@ -28,7 +28,7 @@ class CustomizedMonthAxisTick extends PureComponent {
             stroke='orange'
             strokeWidth='3'
             strokeLinecap='round'
-          ></line>
+          />
         )}
         {payload.value.indexOf('.') > -1 && (
           <circle cx='25' cy='0' r='3' fill='red' />

@@ -17,7 +17,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (
       <div className='relative drop-shadow-xl rounded-lg'>
-        <div class='absolute top-5 -left-2 z-10 border-solid border-r-gray-300 border-r-8 border-y-transparent border-y-8 border-l-0'></div>
+        <div className='absolute top-5 -left-2 z-10 border-solid border-r-gray-300 border-r-8 border-y-transparent border-y-8 border-l-0'></div>
         <div className='custom-tooltip bg-slate-50 p-2 border-solid border-r-gray-400'>
           <p className='label text-left text-sm mb-1 text-yellow-600'>{`${idFormatter(
             label
