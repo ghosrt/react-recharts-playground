@@ -1,24 +1,31 @@
 import React, { Fragment } from 'react';
 
-const renderLegend = (props) => {
+const renderLegend = (props, additionalData) => {
   const { payload } = props;
 
   return (
-    <ul className='inline-flex'>
+    <ul className='flex items-start'>
       {payload.map((entry, color, index) => (
-        <Fragment>
-          {/* <span className='w-1 h-1' style={{ backgroundColor: color }}></span> */}
-          <rect
-            width={50}
-            height={50}
-            fill={true}
-            style={{ fill: color }}
-            rx={10}
-            ry={10}
-          />
+        <div className='flex items-start'>
+          <div
+            className={`w-5 h-5 mx-1 my-0.5 bg-[${entry.color.toLowerCase()}] rounded-sm`}
+            style={{ backgroundColor: entry.color }}
+          ></div>
+
           <li key={`item-${index}`}>{entry.value}</li>
-        </Fragment>
+        </div>
       ))}
+      {additionalData.length > 0 &&
+        additionalData.map((entry, index) => (
+          <div className='flex items-start'>
+            <div
+              className={`w-5 h-5 mx-1 my-0.5 bg-[${entry.color.toLowerCase()}] rounded-sm`}
+              style={{ backgroundColor: entry.color }}
+            ></div>
+
+            <li key={`item-${index}`}>{entry.value}</li>
+          </div>
+        ))}
     </ul>
   );
 };

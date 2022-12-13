@@ -79,8 +79,9 @@ class ShareProfitChart extends PureComponent {
 
   render() {
     const { chartTitle } = this.props;
-    const acqColor = 'rgba(255, 99, 132, 0.5)';
-    const estColor = 'rgba(53, 162, 235, 0.5)';
+    const acqColor = '#FDA4AF';
+    const estColor = '#7DD3FC';
+    const barOpacity = '0.5';
     const acqDataName = '取得額';
     const estDataName = '評価額';
 
@@ -145,8 +146,18 @@ class ShareProfitChart extends PureComponent {
                   className='rounded-lg'
                   content={<CustomTooltip />}
                 />
-                <Bar dataKey='acqValue' fill={acqColor} name={acqDataName} />
-                <Bar dataKey='estValue' fill={estColor} name={estDataName} />
+                <Bar
+                  dataKey='acqValue'
+                  fill={acqColor}
+                  fillOpacity={barOpacity}
+                  name={acqDataName}
+                />
+                <Bar
+                  dataKey='estValue'
+                  fill={estColor}
+                  fillOpacity={barOpacity}
+                  name={estDataName}
+                />
               </BarChart>
             </ResponsiveContainer>
           </div>
