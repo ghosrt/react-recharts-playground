@@ -90,7 +90,7 @@ class ShareProfitChart extends PureComponent {
         <h1 className='text-left'>{chartTitle}</h1>
         <br />
         <div className='w-full flex flex-row'>
-          <div className='w-1/5 h-3/4 my-auto'>
+          <div className='flex flex-col justify-center w-1/5 h-auto bg-gradient-to-r from-gray-200 to-white cursor-pointer'>
             <button
               className='black-text text-2xl text-center'
               onClick={() => {
@@ -99,6 +99,7 @@ class ShareProfitChart extends PureComponent {
             >
               ←
             </button>
+            <span className='text-sm text-gray-500'>過去データ</span>
           </div>
           <div
             className='barChart'
@@ -161,7 +162,7 @@ class ShareProfitChart extends PureComponent {
               </BarChart>
             </ResponsiveContainer>
           </div>
-          <div className='w-1/5 h-3/4 my-auto'>
+          <div className='flex flex-col justify-center w-1/5 h-auto bg-gradient-to-r from-white to-gray-200 cursor-pointer'>
             <button
               className='black-text text-2xl text-center'
               onClick={() => {
@@ -170,6 +171,7 @@ class ShareProfitChart extends PureComponent {
             >
               →
             </button>
+            <span className='text-sm text-gray-500'>推測データ</span>
           </div>
         </div>
       </Fragment>
